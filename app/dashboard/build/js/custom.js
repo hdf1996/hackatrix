@@ -4152,7 +4152,7 @@ if (typeof NProgress != 'undefined') {
 					},
 					saveAsImage: {
 					  show: true,
-					  title: "Save Image"
+					  title: "Descargar imagen"
 					}
 				  }
 				},
