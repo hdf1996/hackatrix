@@ -3,6 +3,7 @@
 3) Desarrollar la funcionalidad de la plataforma.
 
 
+- Finalidad de compras programadas.
 
 - Problematica acceso a bienes fundamentales.
 
