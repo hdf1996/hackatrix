@@ -113,14 +113,59 @@ body {
     &.uno {
       right: 456px;
       top: 136px;
+      animation: slideUno 2s ease;
+      @keyframes slideUno {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        20% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &.dos {
       right: 367px;
       top: 190px;
+      animation: slideDos 4s ease;
+      @keyframes slideDos {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        50% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &.tres {
       right: 272px;
       top: 254px;
+      animation: slideTres 6s ease;
+      @keyframes slideTres {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        66% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &:hover {
       transform: scale(1.2);
