@@ -31,6 +31,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -45,7 +46,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <div id="top">
+  <section id="top">
     <div id="infographic">
       <img class="shape" src="images/shape-landing.png" alt="">
       <img class="item uno" src="images/1.png" alt="">
@@ -77,20 +78,20 @@
 
 
 
-    <section id="main" class="container-fluid">
+    <div id="main" class="container-fluid">
       <div class="block">
         <h3>La economía de todos nosotros</h3>
         <h4>Organizá tus compras al mismo tiempo que ahorrás. Hacé compras chicas a precios mayoristas.</h4>
         <input type="search" id="search" placeholder="¿Qué producto necesitas?" />
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
 
   <section id="pasos">
     <div class="column">
       <div class="fila">
-        <div class="item">
+        <div class="item wow fadeInUp">
           <img src="images/paso1.png" alt="">
           <div class="info">
             <h3>Realizas tu compra</h3>
@@ -99,7 +100,7 @@
         </div>
       </div>
       <div class="fila">
-        <div class="item">
+        <div class="item wow fadeInUp">
           <img src="images/paso2.png" alt="">
           <div class="info">
             <h3>Nosotros nos encargamos de organizar tu pedido</h3>
@@ -108,7 +109,7 @@
         </div>
       </div>
       <div class="fila">
-        <div class="item">
+        <div class="item wow fadeInUp">
           <img src="images/paso3.png" alt="">
           <div class="info">
             <h3>Recibís tus articulos</h3>
@@ -139,6 +140,7 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/select2/dist/js/select2.js"></script>
+  <script src="/bower_components/wow/dist/wow.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -160,6 +162,9 @@
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js "></script>
   <!-- endbuild -->
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
