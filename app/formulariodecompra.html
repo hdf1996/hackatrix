@@ -17,7 +17,11 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+    <link src="bower_components/select2/dist/css/select2.min.css"></link>
+    <!-- endbuild -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/select2/dist/js/select2.min.js"></script>
+
   </head>
   <body>
     <div class="subtitle">
@@ -28,7 +32,8 @@
     </div>
     <div class="firstline">
       <div class="productSelector">
-        <input class="form-control js-input" type="text" name="producto">
+        <select class="form-control js-input" type="text" name="producto">
+        </select>
       </div>
       <div class="cant-select">
         <select class="form-control">
@@ -42,7 +47,7 @@
         <p>$40</p>
       </div>
     </div>
-    
 
+    <script src="/scripts/main.js"> </script>
   </body>
 </html>
