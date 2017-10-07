@@ -4002,8 +4002,8 @@ ul.notifications {
 .logo svg {
   fill: #fff;
   position: absolute;
-  left: 10px;
-  top: 10px; }
+  left: 1px;
+  top: 0px; }
 
 .logo div {
   width: 40px;
@@ -4017,17 +4017,17 @@ ul.notifications {
   animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite; }
 
 .logo div:nth-child(1) {
-  background-color: #29ffff;
+  background-color: #5449D2;
   -webkit-animation-name: rotate-1;
   animation-name: rotate-1; }
 
 .logo div:nth-child(2) {
-  background-color: #ff65ff;
+  background-color: #FE825B;
   -webkit-animation-name: rotate-2;
   animation-name: rotate-2; }
 
 .logo div:nth-child(3) {
-  background-color: #ffc;
+  background-color: #648FE1;
   -webkit-animation-name: rotate-3;
   animation-name: rotate-3; }
 
