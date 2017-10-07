@@ -207,6 +207,17 @@ body {
   align-items: center;
   .block {
     width: 50%;
+    animation: 1.3s blockUp ease;
+    @keyframes blockUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
     h3,
     h4 {
       cursor: default;
