@@ -148,7 +148,8 @@ section#main {
       border-radius: 70px;
       width: 83%;
       box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.25);
-      font-family: open sans;
+      font-family: $opensans;
+      font-weight: 300;
       font-size: 1.2em;
       padding-left: 20px;
       margin: 33px 0;
@@ -161,64 +162,63 @@ section#main {
 
 //----------------------contacto---------------------------------
 
-.firstline{
+.firstline {
   display: flex;
   align-items: center;
   justify-content: baseline;
   width: 80vw;
   margin: auto;
 }
-.cant-select{
-  select{
+.cant-select {
+  select {
     width: 200px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
 }
-.subtitle{
+.subtitle {
   display: none;
   justify-content: space-evenly;
-  p{
+  p {
     width: 200px;
   }
 }
-.firstline{
-  .precio-u{
-    p{
+.firstline {
+  .precio-u {
+    p {
       width: 2em;
       text-align: center;
     }
-
-  }  .precio-t{
-        width: 5em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    p{
+  }
+  .precio-t {
+    width: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
       width: 2em;
       text-align: center;
     }
-    span{
+    span {
       text-decoration: line-through;
       font-size: 0.8em;
     }
-
   }
-  .productSelector{
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  .productSelector {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     width: 197px;
-    select{
+    select {
       width: 200px;
       height: 30px;
     }
   }
   .cant-select.prioridad select {
     width: 80px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     height: 30px;
   }
   .cant-select input {
     width: 80px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border: 1px solid #ccc;
     height: 30px;
     border-radius: 3px;
@@ -226,8 +226,12 @@ section#main {
   .select2-selection--single {
     height: 36px;
   }
-  p { margin: auto; text-align: center; }
-  .col-xs-1, .col-xs-4 {
+  p {
+    margin: auto;
+    text-align: center;
+  }
+  .col-xs-1,
+  .col-xs-4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,50 +246,50 @@ section#main {
     font-size: 9pt;
   }
 }
-.totales{
+.totales {
   width: 98%;
   display: inline-flex;
   justify-content: space-between;
   border-top: 2px solid #ff7647;
   margin-top: 3em;
-  padding-left:1em;
+  padding-left: 1em;
   padding-top: 1em;
-  .p-tot{
+  .p-tot {
     width: 15em;
     display: flex;
     justify-content: space-around;
-    span{
+    span {
       margin-right: 1em;
     }
   }
 }
-.comprar{
+.comprar {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  .boton{
+  .boton {
     width: 200px;
-    text-align:center;
+    text-align: center;
   }
-  button{
+  button {
     border-radius: 30px;
     background-color: #ff7647;
     color: white;
     width: 6em;
     border: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     font-size: 1.5em;
     font-weight: bold;
-    padding:0.4em;
+    padding: 0.4em;
     transition: 0.3s;
-    &:hover{
+    &:hover {
       background: transparent;
       border: 3px solid #ff7647;
       color: #ff7647;
     }
   }
-  span{
+  span {
     color: #ff7647;
     font-size: 2em;
     border: 3px solid;
@@ -295,7 +299,7 @@ section#main {
   }
 }
 
-.selectli{
+.selectli {
   display: flex;
   height: 50px;
   align-items: center;
