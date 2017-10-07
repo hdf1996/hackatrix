@@ -107,7 +107,20 @@ body {
     width: 670px;
   }
   .item {
-    width: 54px;
+    img {
+      width: 54px;
+    }
+    span {
+      position: absolute;
+      top: -3px;
+      width: 230px;
+      right: -225px;
+      color: #d3d0ff;
+      letter-spacing: 1px;
+      transition: 1s ease all;
+      visibility: hidden;
+      opacity: 0;
+    }
     position: absolute;
     transition: 0.5s ease all;
     &.uno {
@@ -169,6 +182,10 @@ body {
     }
     &:hover {
       transform: scale(1.2);
+      span {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 }
