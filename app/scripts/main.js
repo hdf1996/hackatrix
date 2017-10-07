@@ -20,7 +20,7 @@
     const ammount = row.find('.cant-select input[type="number"]').val()
     row.find('.precio-u').text(`$${info.priceM}`)
     // row.find('.precio-u').text(`$${info.price}`)
-    row.find('.precio-t p').html(`$${info.priceM * ammount}`)
+    row.find('.precio-t p').html(`$${Math.round(info.priceM * ammount*10)/10}`)
     row.find('.precio-t span').html(`$${info.priceG * ammount}`)
     row.find('.precio-desc').html(`$${(info.priceG - info.priceM)*ammount}`)
     var total = 0;
