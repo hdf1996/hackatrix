@@ -2207,13 +2207,13 @@ if (typeof NProgress != 'undefined') {
 				data: {
 				  labels: ["Acelga", "Berengena", "Naranja", "Zanahoria", "Frutilla", "Pera", "Tomate"],
 				  datasets: [{
-					label: '# of Votes',
-					backgroundColor: "#26B99A",
-					data: [51, 30, 40, 28, 92, 50, 45]
+					label: 'PRECIO FINAL',
+					backgroundColor: "#5449d2",
+					data: [10, 30, 40, 28, 92, 50, 45]
 				  }, {
-					label: '# of Votes',
-					backgroundColor: "#03586A",
-					data: [41, 56, 25, 48, 72, 34, 12]
+					label: 'PRECIO EN GONDOLA',
+					backgroundColor: "#FE825B",
+					data: [20, 56, 60, 36, 120, 80, 70]
 				  }]
 				},
 
