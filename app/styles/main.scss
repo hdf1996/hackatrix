@@ -103,7 +103,7 @@ body {
   }
 }
 .subtitle{
-  display: flex;
+  display: none;
   justify-content: space-evenly;
   p{
     width: 200px;
@@ -112,9 +112,24 @@ body {
 .firstline{
   .precio-u{
     p{
-      width: 200px;
+      width: 2em;
       text-align: center;
     }
+
+  }  .precio-t{
+        width: 5em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    p{
+      width: 2em;
+      text-align: center;
+    }
+    span{
+      text-decoration: line-through;
+      font-size: 0.8em;
+    }
+
   }
   .product-selector{
     input{
