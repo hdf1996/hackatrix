@@ -93,7 +93,13 @@ body {
 }
 
 //----------------------contacto---------------------------------
+ 
   .firstline{
+    select{
+      -webkit-box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+    }
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -132,8 +138,11 @@ body {
     }
 
   }
-  .product-selector{
-    input{
+  .productSelector{
+    -webkit-box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 48px -10px rgba(0,0,0,0.75);
+    select{
     width: 200px;
     }
   }
