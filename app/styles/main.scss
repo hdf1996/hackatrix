@@ -45,7 +45,13 @@ header {
   }
   .left {
     display: flex;
+    align-items: center;
     margin-left: 5.2em;
+    img {
+      margin-top: 23px;
+      margin-left: 23px;
+      height: 2.5em;
+    }
   }
   ul {
     list-style-type: none;
