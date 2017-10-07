@@ -35,6 +35,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
+  position: relative;
   h2 {
     margin-left: 0.6em;
     margin-top: 10px;
@@ -88,8 +90,37 @@ section {
 
 body {
   min-height: 100vh;
-  background: url(../images/landing-graphic.png) top right no-repeat;
+  //background: url(../images/landing-graphic.png) top right no-repeat;
   background-size: 51%;
+}
+
+#infographic {
+  .shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 670px;
+  }
+  .item {
+    width: 54px;
+    position: absolute;
+    transition: 0.5s ease all;
+    &.uno {
+      right: 456px;
+      top: 136px;
+    }
+    &.dos {
+      right: 367px;
+      top: 190px;
+    }
+    &.tres {
+      right: 272px;
+      top: 254px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 section#main {
@@ -121,7 +152,7 @@ section#main {
       margin: 33px 0;
       padding-right: 60px;
       background: url(../images/searchbtn.png) 99% center no-repeat;
-      background-size: 12%;
+      background-size: 50px;
     }
   }
 }
