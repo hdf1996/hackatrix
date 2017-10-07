@@ -247,6 +247,7 @@ body {
   justify-content: baseline;
   width: 80vw;
   margin: auto;
+  padding-bottom: 1em;
   p{
     strong{
       color: green;
@@ -383,12 +384,16 @@ body {
   margin-top: 3em;
   padding-left: 1em;
   padding-top: 1em;
+  font-weight: bold;
   .p-tot {
     width: 15em;
     display: flex;
     color: black;
-    font-weight: bold;
     justify-content: space-around;
+      p{
+        font-weight: bolder;
+        color: black !important;
+      }
     span {
       margin-right: 1em;
       &:nth-child(2){
