@@ -14,34 +14,18 @@
   		return $opt;
   	}
   };
+  var data = [{ id: 0, text: 'enhancement' }, { id: 1, text: 'bug' }, { id: 2, text: 'duplicate' }, { id: 3, text: 'invalid' }, { id: 4, text: 'wontfix' }];
 
   $('.js-input').select2({
-    minimumInputLength: 2,
-    tags: [],
-		templateResult: addUserPic,
-    templateSelection: addUserPic,
-    ajax: {
-        url: '/data/countries.json',
-        dataType: 'json',
-        type: "GET",
-        quietMillis: 50,
-        data: function (term) {
-            return {
-                term: term
-            };
-        },
-        results: function (data) {
-          debugger;
-            return {
-                results: $.map(data, function (item) {
-                    return {
-                        text: item.completeName,
-                        slug: item.slug,
-                        id: item.id
-                    }
-                })
-            };
-        }
-    }
-});
+    url: "https://api.github.com/search/repositories",
+    data: data,
+    allowClear: true,
+    placeholder: "Selecciona tu producto",
+    processResults: function (data, page) {
+      // parse the results into the format expected by Select2.
+      // since we are using custom formatting functions we do not need to
+      // alter the remote JSON data
+      return data;
+    },
+  })
 })()
