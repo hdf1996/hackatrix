@@ -41,6 +41,9 @@
 
 - Se puede utilizar machine learning para encontrar el camino logistico de menor trazo monetario.
 
+
+- Autoregulacion de precios segun la ley de oferta y demanda.
+
 ---
 Nombres candidatos:
 
