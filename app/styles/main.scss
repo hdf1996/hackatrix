@@ -255,7 +255,6 @@ section#main {
 .encarga{
   color: #2A3F54;
   margin-left: 1em;
-  margin-bottom: 1em;
   margin-left: 0.5em;
 }
 .eor{
@@ -276,6 +275,18 @@ section#main {
     margin-bottom: 2em;
     text-align: left;
      }
+  }
+  .tituloprincipal{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: inline-flex;
+    width: 81%;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      font-size: 3em;
+    }
+
   }
 .totales {
   width: 85%;
