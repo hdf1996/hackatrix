@@ -32,9 +32,19 @@
 - Se realiza la entrega dentro de las 24, y poner horario preferencial. (costo mas o menos de acuerdo al momento de entrega).
 
 
+- Se puede hacer una comparativa entre el precio de la compra en la plataforma y el precio de la competencia.
+
+- tirar dos approach. El mismo retirador lo distribuya a partir del centro de storage.
+
+- Bloque de distintas cantidades, para distintos precios. 
+
+
+- Se puede utilizar machine learning para encontrar el camino logistico de menor trazo monetario.
+
 ---
 Nombres candidatos:
 
-- Empathy: el intercambio de todos nosotros.
-
+- Empathy: la economia de todos nosotros.
+- Call to action: empeza a formar parte de la inclusion comercial.
+- 
 --
