@@ -22,7 +22,7 @@
     // row.find('.precio-u').text(`$${info.price}`)
     row.find('.precio-t p').html(`$${Math.round(info.priceM * ammount*10)/10}`)
     row.find('.precio-t span').html(`$${info.priceG * ammount}`)
-    row.find('.precio-desc').html(`$${(info.priceG - info.priceM)*ammount}`)
+    row.find('.precio-desc').html(`$${Math.round((info.priceG - info.priceM)*ammount * 10) /10}`)
     var total = 0;
     var totaldesc = 0;
     document.querySelectorAll('.precio-t p').forEach((p) => {
