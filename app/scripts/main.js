@@ -28,6 +28,7 @@
   $('.js-input').select2({
     data: data,
     allowClear: true,
+    containerCssClass: "eor" ,
     templateResult: formatResult,
     templateSelection: formatSelection,
     placeholder: "Selecciona tu producto",

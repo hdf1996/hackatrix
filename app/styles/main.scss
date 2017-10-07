@@ -261,6 +261,13 @@ body {
     width: 200px;
   }
 }
+.input-label {
+    color: #5449d2;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+    font-size: 9pt;
+  }
 .firstline {
   .precio-u {
     p {
@@ -291,7 +298,7 @@ body {
     }
   }
   .cant-select.prioridad select {
-    width: 80px;
+    width: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     height: 30px;
   }
@@ -305,10 +312,7 @@ body {
   .select2-selection--single {
     height: 36px;
   }
-  p {
-    margin: auto;
-    text-align: center;
-  }
+ 
   .col-xs-1,
   .col-xs-4 {
     display: flex;
@@ -317,16 +321,50 @@ body {
     flex-wrap: wrap;
     margin-right: 30px;
   }
-  .input-label {
-    color: #5449d2;
-    font-weight: bold;
-    margin-bottom: 11px;
-    letter-spacing: 1px;
-    font-size: 9pt;
-  }
+  
 }
+.encarga{
+  color: #2A3F54;
+  margin-left: 1em;
+  margin-left: 0.5em;
+}
+.eor{
+  height: 2em;
+}
+.col-xs-1,
+  .col-xs-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+  .titles{
+    margin-bottom: 2em;
+     p {
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: left;
+     }
+  }
+  .tituloprincipal{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: inline-flex;
+    width: 81%;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      font-size: 3em;
+    }
+
+  }
+  .felicitacion{
+    color: black;
+    width: 48%;
+  }
 .totales {
-  width: 98%;
+  width: 85%;
   display: inline-flex;
   justify-content: space-between;
   border-top: 2px solid #ff7647;
@@ -352,20 +390,19 @@ body {
     text-align: center;
   }
   button {
-    border-radius: 30px;
+    border-radius: 4px;
     background-color: #ff7647;
     color: white;
-    width: 6em;
+    width: 128px;
+    height: 48px;
     border: none;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 0.4em;
+    padding: 12px 30px;
+    text-align: center;
     transition: 0.3s;
     &:hover {
-      background: transparent;
-      border: 3px solid #ff7647;
-      color: #ff7647;
     }
   }
   span {
