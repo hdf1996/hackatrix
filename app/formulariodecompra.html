@@ -25,50 +25,57 @@
 
   </head>
   <body>
-    <div class="subtitle">
+    <div class="container-fluid">
+
+      <div class="subtitle">
         <p>Seleccionar Producto:</p>
         <p>Seleccionar Cantidad:</p>
         <p>Seleccionar Prioridad:</p>
         <p>Precio unitario:</p>
         <p>Precio total:</p>
 
-    </div>
-    <div class="firstline">
-      <div class="productSelector col-xs-12">
-        <select class="form-control js-input" type="text" name="producto">
-        </select>
       </div>
-      <div class="cant-select prioridad">
-        <select class="form-control">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+      <div class="firstline">
+        <div class="productSelector">
+          <select class="form-control js-input" type="text" name="producto">
+          </select>
+        </div>
+        <div class="cant-select prioridad">
+          <select class="form-control">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="cant-select">
+          <select class="form-control">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+        <div class="precio-u">
+          <p>$40</p>
+        </div>
+        <div class="precio-t">
+          <p>$200</p>
+          <span>$255</span>
+        </div>
+        <div>
+          <p><strong>$55</strong></p>
+        </div>
       </div>
-      <div class="cant-select">
-        <select class="form-control">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+      <div class="totales">
+        <p>Totales</p>
+        <div class="p-tot">
+          
+          <span>$2500</span>
+        <span>$500</span>
+        </div>
       </div>
-      <div class="precio-u">
-        <p>$40</p>
-      </div>
-      <div class="precio-t">
-        <p>$200</p>
-        <span>$255</span>
-      </div>
-      <div>
-        <p><strong>$55</strong></p>
-      </div>
-    </div>
-    <div class="totales">
-      <p>Total</p>
-      <p>Total ahorrado</p>
     </div>
     <script src="/scripts/main.js"> </script>
   </body>
-</html>
+  </html>
