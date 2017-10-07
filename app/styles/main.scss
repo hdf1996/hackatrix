@@ -23,6 +23,15 @@ h2 {
   font-size: 2.6em;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 p {
   font-family: $opensans;
 }
