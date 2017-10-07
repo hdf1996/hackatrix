@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hackatrix</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link src="bower_components/select2/dist/css/select2.min.css"></link>
+    <!-- endbuild -->
+    <link src="bower_components/select2/dist/css/select2.min.css"></link>
+    <!-- endbuild -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/select2/dist/js/select2.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="subtitle">
+        <p>Seleccionar Producto:</p>
+        <p>Seleccionar Cantidad:</p>
+        <p>Seleccionar Prioridad:</p>
+        <p>Precio unitario:</p>
+        <p>Precio total:</p>
+
+      </div>
+      <div class="firstline">
+
+        <div class="col-xs-3">
+          <p class="input-label">TITLE</p>
+          <div class="productSelector">
+            <select class="form-control js-input" type="text" name="producto">
+            </select>
+          </div>
+        </div>  
+
+        <div class="col-xs-1">
+          <p class="input-label">TITLE</p>
+          <div class="cant-select">
+            <input type="number">
+          </div>
+        </div>  
+
+        <div class="col-xs-1">
+          <p class="input-label">TITLE</p>
+          <div class="cant-select prioridad">
+            <select class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-xs-1">
+          <p class="input-label">TITLE</p>
+          <div class="precio-u">
+            <p>$40</p>
+          </div>
+        </div>  
+
+        <div class="col-xs-1">
+          <p class="input-label">TITLE</p>
+          <div class="precio-t">
+            <p>$200</p>
+            <span>$255</span>
+          </div>
+        </div>  
+
+        <div class="col-xs-1">
+          <p class="input-label">TITLE</p>
+          <div>
+            <p><strong>$55</strong></p>
+          </div>
+        </div>  
+
+      </div>
+      <div class="totales">
+        <p>Totales</p>
+        <div class="p-tot">
+
+          <span>$2500</span>
+        <span>$500</span>
+        </div>
+      </div>
+      <div class="comprar col-xs-12">
+        <span class="glyphicon glyphicon-ok"></span>
+        <div class="felicitacion">
+          <h2>Felicidades!</h2>
+            <p>Ahorraste un 28% en esta compra</p>
+        </div>
+        <div class="boton">
+          <button>Encargar</button>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/main.js"> </script>
+  </body>
+  </html>
