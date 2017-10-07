@@ -95,10 +95,11 @@ body {
 //----------------------contacto---------------------------------
  
   .firstline{
-
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: baseline;
+    width: 80vw;
+    margin: auto;
   }  
 .cant-select{
   select{ 
@@ -137,9 +138,41 @@ body {
   }
   .productSelector{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 197px;
     select{
-    width: 200px;
+      width: 200px;
+      height: 30px;
     }
+  }
+  .cant-select.prioridad select {
+    width: 80px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 30px;
+  }
+  .cant-select input {
+    width: 80px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 3px;
+  }
+  .select2-selection--single {
+    height: 36px;
+  }
+  p { margin: auto; text-align: center; }
+  .col-xs-1, .col-xs-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+  .input-label {
+    color: #5449d2;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+    font-size: 9pt;
   }
 }
 .totales{
