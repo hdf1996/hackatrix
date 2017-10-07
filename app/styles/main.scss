@@ -36,12 +36,16 @@ header {
   align-items: center;
   justify-content: space-between;
   h2 {
-    margin-left: 2em;
+    margin-left: 0.6em;
     margin-top: 10px;
   }
   .right,
   .right ul {
     display: flex;
+  }
+  .left {
+    display: flex;
+    margin-left: 5.2em;
   }
   ul {
     list-style-type: none;
