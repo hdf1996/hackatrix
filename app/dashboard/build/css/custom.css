@@ -4064,4 +4064,16 @@ ul.notifications {
 .left_col {
   background: #242424; }
 
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding-top: 10px; }
+  #footer .sandy {
+    height: 50px;
+    margin-right: 20px; }
+
 /*# sourceMappingURL=custom.css.map */
