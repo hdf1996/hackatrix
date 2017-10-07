@@ -177,7 +177,7 @@
 }
 .nav_menu {
   float: left;
-  background: #5449d2;
+  background: #EDEDED;
   border-bottom: 1px solid #D9DEE4;
   margin-bottom: 10px;
   width: 100%;
@@ -605,7 +605,7 @@ a:hover, a:focus {
   height: inherit;
   margin: 0;
   padding-left: 0px;
-  background: #5449d2;
+  background: #ededed;
 }
 .site_title:hover, .site_title:focus {
   text-decoration: none
@@ -4375,7 +4375,7 @@ ul.notifications {
           animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
 }
 .logo div:nth-child(1) {
-  background-color: #29ffff;
+  background-color: #5449D2;
   -webkit-animation-name: rotate-1;
           animation-name: rotate-1;
 }
@@ -4430,16 +4430,4 @@ ul.notifications {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.nav_menu{
-  a{
-    color: white;
-  }
-}
-.nav.navbar-nav > li > a{
-  color: white !important;
-}
-
-.left_col {
-    background: #242424;
 }
