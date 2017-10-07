@@ -138,7 +138,7 @@ body {
   .productSelector{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     select{
-    width: 200px;
+      width: 200px;
     }
   }
 }
@@ -148,6 +148,8 @@ body {
   justify-content: space-between;
   border-top: 2px solid #ff7647;
   margin-top: 3em;
+  padding-left:1em; 
+  padding-top: 1em;
   .p-tot{
     width: 15em;
     display: flex;
@@ -155,6 +157,31 @@ body {
     span{
       margin-right: 1em;
     }
-
+  }
+}
+.comprar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  .boton{
+    width: 200px;
+    text-align:center;
+  }
+  button{
+    border-radius: 20px;
+    background-color: #ff7647; 
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding:0.4em;
+  }
+  span{
+    color: #ff7647;
+    font-size: 2em;
+    border: 3px solid;
+    border-radius: 50%;
+    padding: 0.2em;
+    margin-right: 1em;
   }
 }
