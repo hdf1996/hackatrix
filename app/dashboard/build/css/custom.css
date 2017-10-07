@@ -2565,7 +2565,9 @@ ul.widget_profile_box {
   padding: 3px;
   background: #ececec;
   margin-top: 40px;
-  margin-left: 1px; }
+  margin-left: 1px;
+  display: flex;
+  justify-content: center; }
 
 ul.widget_profile_box li:first-child {
   width: 25%;
