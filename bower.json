@@ -2,7 +2,8 @@
   "name": "hackatrix",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5"
+    "bootstrap-sass": "~3.3.5",
+    "select2": "^4.0.4"
   },
   "overrides": {
     "bootstrap-sass": {
