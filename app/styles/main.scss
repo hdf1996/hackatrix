@@ -36,13 +36,25 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
+  position: relative;
   h2 {
-    margin-left: 2em;
+    margin-left: 0.6em;
     margin-top: 10px;
   }
   .right,
   .right ul {
     display: flex;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    margin-left: 5.2em;
+    img {
+      margin-top: 23px;
+      margin-left: 23px;
+      height: 2.5em;
+    }
   }
   ul {
     list-style-type: none;
@@ -66,6 +78,7 @@ header {
         color: white;
         box-shadow: -1px 3px 20px 0px #0e094a;
         &:hover {
+          background-color: #ff5504;
           box-shadow: -1px 5px 20px 5px #0e094a;
         }
       }
@@ -79,8 +92,37 @@ section {
 
 body {
   min-height: 100vh;
-  background: url(../images/landing-graphic.png) top right no-repeat;
+  //background: url(../images/landing-graphic.png) top right no-repeat;
   background-size: 51%;
+}
+
+#infographic {
+  .shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 670px;
+  }
+  .item {
+    width: 54px;
+    position: absolute;
+    transition: 0.5s ease all;
+    &.uno {
+      right: 456px;
+      top: 136px;
+    }
+    &.dos {
+      right: 367px;
+      top: 190px;
+    }
+    &.tres {
+      right: 272px;
+      top: 254px;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 section#main {
@@ -101,7 +143,7 @@ section#main {
     }
     input {
       outline: none;
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(0, 0, 0, 0.17);
       padding: 18px;
       border-radius: 70px;
       width: 83%;
@@ -112,20 +154,20 @@ section#main {
       margin: 33px 0;
       padding-right: 60px;
       background: url(../images/searchbtn.png) 99% center no-repeat;
-      background-size: 12%;
+      background-size: 50px;
     }
   }
 }
 
 //----------------------contacto---------------------------------
 
-  .firstline{
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    width: 80vw;
-    margin: auto;
-  }  
+.firstline{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  width: 80vw;
+  margin: auto;
+}
 .cant-select{
   select{
     width: 200px;
@@ -206,7 +248,7 @@ section#main {
   justify-content: space-between;
   border-top: 2px solid #ff7647;
   margin-top: 3em;
-  padding-left:1em; 
+  padding-left:1em;
   padding-top: 1em;
   .p-tot{
     width: 15em;
@@ -228,7 +270,7 @@ section#main {
   }
   button{
     border-radius: 30px;
-    background-color: #ff7647; 
+    background-color: #ff7647;
     color: white;
     width: 6em;
     border: none;
@@ -265,4 +307,93 @@ section#main {
     height: 30px;
     width: 30px;
   }
+}
+
+// CUSTOM STYLE
+
+.logo {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+}
+.logo svg,
+.logo div {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.logo svg {
+  fill: #fff;
+  position: absolute;
+  left: 1px;
+  top: 0px;
+}
+.logo div {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 20%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  mix-blend-mode: multiply;
+  -webkit-animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+  animation: 2s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+}
+.logo div:nth-child(1) {
+  background-color: #5449d2;
+  -webkit-animation-name: rotate-1;
+  animation-name: rotate-1;
+}
+.logo div:nth-child(2) {
+  background-color: #fe825b;
+  -webkit-animation-name: rotate-2;
+  animation-name: rotate-2;
+}
+.logo div:nth-child(3) {
+  background-color: #648fe1;
+  -webkit-animation-name: rotate-3;
+  animation-name: rotate-3;
+}
+@-webkit-keyframes rotate-1 {
+  to {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+@keyframes rotate-1 {
+  to {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+@-webkit-keyframes rotate-2 {
+  to {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+}
+@keyframes rotate-2 {
+  to {
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+  }
+}
+@-webkit-keyframes rotate-3 {
+  to {
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+}
+@keyframes rotate-3 {
+  to {
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
