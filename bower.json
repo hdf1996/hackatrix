@@ -3,7 +3,9 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "select2": "^4.0.4"
+    "select2": "^4.0.4",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2"
   },
   "overrides": {
     "bootstrap-sass": {
