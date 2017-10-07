@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Empaty </title>
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -146,7 +146,7 @@
                         <li><a href="#level1_2">Level One</a>
                         </li>
                     </ul>
-                  </li>                  
+                  </li>
                   <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
                 </ul>
               </div>
@@ -273,67 +273,90 @@
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
+            <div class="tituloprincipal">
+              <h1 class="encarga">Encarga tu producto</h1>
+              <span class="glyphicon glyphicon-plus-sign"></span>
+            </div>
             <div class="container-fluid">
 
-              <div class="subtitle">
-                <p>Seleccionar Producto:</p>
-                <p>Seleccionar Cantidad:</p>
-                <p>Seleccionar Prioridad:</p>
-                <p>Precio unitario:</p>
-                <p>Precio total:</p>
+              <div class="titles">
+
+                <div class="col-xs-3">
+                  <p class="input-label">Seleccionar Producto:</p>
+
+                </div>
+
+                <div class="col-xs-1">
+                  <p class="input-label">Cantidad: </p>
+
+                </div>
+
+                <div class="col-xs-2">
+                  <p class="input-label">Prioridad:</p>
+
+                </div>
+
+                <div class="col-xs-1">
+                  <p class="input-label">Unitario:</p>
+
+                </div>
+
+                <div class="col-xs-1">
+                  <p class="input-label">Total:</p>
+                </div>
+
+                <div class="col-xs-1">
+                  <p class="input-label">Ahorro:
+                  </p>
+                </div>
 
               </div>
+            </div>
+            <div class="container-fluid">
+
               <div class="firstline">
 
                 <div class="col-xs-3">
-                  <p class="input-label">TITLE</p>
                   <div class="productSelector">
                     <select class="form-control js-input" type="text" name="producto">
-                    </select>
-                  </div>
-                </div>  
-
-                <div class="col-xs-1">
-                  <p class="input-label">TITLE</p>
-                  <div class="cant-select">
-                    <input type="number">
-                  </div>
-                </div>  
-
-                <div class="col-xs-1">
-                  <p class="input-label">TITLE</p>
-                  <div class="cant-select prioridad">
-                    <select class="form-control">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
                     </select>
                   </div>
                 </div>
 
                 <div class="col-xs-1">
-                  <p class="input-label">TITLE</p>
+                  <div class="cant-select">
+                    <input type="number" value="1" min="0">
+                  </div>
+                </div>
+
+                <div class="col-xs-2">
+                  <div class="cant-select prioridad">
+                    <select class="form-control">
+                      <option value="1">Inmediata</option>
+                      <option value="2">Normal</option>
+                      <option value="3">Baja</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-xs-1">
                   <div class="precio-u">
                     <p>$40</p>
                   </div>
-                </div>  
+                </div>
 
                 <div class="col-xs-1">
-                  <p class="input-label">TITLE</p>
                   <div class="precio-t">
                     <p>$200</p>
                     <span>$255</span>
                   </div>
-                </div>  
+                </div>
 
                 <div class="col-xs-1">
-                  <p class="input-label">TITLE</p>
                   <div>
                     <p><strong>$55</strong></p>
                   </div>
-                </div>  
+                </div>
 
               </div>
               <div class="totales">
@@ -355,7 +378,7 @@
                 </div>
               </div>
             </div>
-          
+
           </div>
         </div>
         <!-- /page content -->
@@ -376,7 +399,7 @@
 
     <script src="/bower_components/select2/dist/js/select2.min.js"></script>
     <script src="/scripts/main.js"> </script>
-    
+
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
@@ -402,7 +425,7 @@
     <!-- bootstrap-daterangepicker -->
     <script src="../vendors/moment/min/moment.min.js"></script>
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    
+
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
   </body>

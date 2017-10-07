@@ -23,6 +23,15 @@ h2 {
   font-size: 2.6em;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
 p {
   font-family: $opensans;
 }
@@ -107,7 +116,20 @@ body {
     width: 670px;
   }
   .item {
-    width: 54px;
+    img {
+      width: 54px;
+    }
+    span {
+      position: absolute;
+      top: -3px;
+      width: 230px;
+      right: -225px;
+      color: #d3d0ff;
+      letter-spacing: 1px;
+      transition: 1s ease all;
+      visibility: hidden;
+      opacity: 0;
+    }
     position: absolute;
     transition: 0.5s ease all;
     &.uno {
@@ -169,11 +191,15 @@ body {
     }
     &:hover {
       transform: scale(1.2);
+      span {
+        visibility: visible;
+        opacity: 1;
+      }
     }
   }
 }
 
-section#main {
+#main {
   margin-top: 4em;
   margin-left: 7em;
   min-height: 60vh;
@@ -235,6 +261,13 @@ section#main {
     width: 200px;
   }
 }
+.input-label {
+    color: #5449d2;
+    font-weight: bold;
+    margin-bottom: 11px;
+    letter-spacing: 1px;
+    font-size: 9pt;
+  }
 .firstline {
   .precio-u {
     p {
@@ -265,7 +298,7 @@ section#main {
     }
   }
   .cant-select.prioridad select {
-    width: 80px;
+    width: auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     height: 30px;
   }
@@ -279,10 +312,7 @@ section#main {
   .select2-selection--single {
     height: 36px;
   }
-  p {
-    margin: auto;
-    text-align: center;
-  }
+ 
   .col-xs-1,
   .col-xs-4 {
     display: flex;
@@ -291,16 +321,50 @@ section#main {
     flex-wrap: wrap;
     margin-right: 30px;
   }
-  .input-label {
-    color: #5449d2;
-    font-weight: bold;
-    margin-bottom: 11px;
-    letter-spacing: 1px;
-    font-size: 9pt;
-  }
+  
 }
+.encarga{
+  color: #2A3F54;
+  margin-left: 1em;
+  margin-left: 0.5em;
+}
+.eor{
+  height: 2em;
+}
+.col-xs-1,
+  .col-xs-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 30px;
+  }
+  .titles{
+    margin-bottom: 2em;
+     p {
+    margin: auto;
+    margin-bottom: 2em;
+    text-align: left;
+     }
+  }
+  .tituloprincipal{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    display: inline-flex;
+    width: 81%;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      font-size: 3em;
+    }
+
+  }
+  .felicitacion{
+    color: black;
+    width: 48%;
+  }
 .totales {
-  width: 98%;
+  width: 85%;
   display: inline-flex;
   justify-content: space-between;
   border-top: 2px solid #ff7647;
@@ -326,20 +390,19 @@ section#main {
     text-align: center;
   }
   button {
-    border-radius: 30px;
+    border-radius: 4px;
     background-color: #ff7647;
     color: white;
-    width: 6em;
+    width: 128px;
+    height: 48px;
     border: none;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
-    padding: 0.4em;
+    padding: 12px 30px;
+    text-align: center;
     transition: 0.3s;
     &:hover {
-      background: transparent;
-      border: 3px solid #ff7647;
-      color: #ff7647;
     }
   }
   span {
@@ -453,4 +516,59 @@ section#main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#top {
+  min-height: 100vh;
+}
+
+section#pasos {
+  background-image: linear-gradient(0deg, #5449d2 0%, #120a70 100%);
+  padding: 30px;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fila {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0px;
+    &:nth-child(odd) .item {
+      flex-direction: row-reverse;
+      text-align: left;
+      img {
+        margin: 0;
+        margin-left: 3em;
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 710px;
+    width: 60%;
+    text-align: right;
+  }
+  .info {
+    padding-top: 40px;
+    color: $white;
+  }
+  h4 {
+    font-family: $opensans;
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+  img {
+    margin: 0;
+    margin-right: 3em;
+  }
 }
