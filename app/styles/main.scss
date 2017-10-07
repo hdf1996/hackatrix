@@ -258,6 +258,13 @@ body {
   justify-content: baseline;
   width: 80vw;
   margin: auto;
+  p{
+    strong{
+      color: green;
+      padding-right: 4em;
+    }
+
+  }
 }
 .cant-select {
   select {
@@ -314,10 +321,11 @@ body {
     height: 30px;
   }
   .cant-select input {
-    width: 80px;
+    width: 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     border: 1px solid #ccc;
     height: 30px;
+    text-align: center;
     border-radius: 3px;
   }
   .select2-selection--single {
@@ -355,6 +363,7 @@ body {
     margin: auto;
     margin-bottom: 2em;
     text-align: left;
+
   }
 }
 .tituloprincipal {
@@ -366,7 +375,12 @@ body {
   align-items: center;
   span {
     font-size: 3em;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.8;
+    }
   }
+
 }
 .felicitacion {
   color: black;
@@ -383,10 +397,18 @@ body {
   .p-tot {
     width: 15em;
     display: flex;
+    color: black;
+    font-weight: bold;
     justify-content: space-around;
     span {
       margin-right: 1em;
+      &:nth-child(2){
+        padding-right: 1em;
+        color: green;
+        font-weight: bold;
+      }
     }
+
   }
 }
 .comprar {
@@ -412,6 +434,7 @@ body {
     text-align: center;
     transition: 0.3s;
     &:hover {
+      opacity: 0.8;
     }
   }
   span {
