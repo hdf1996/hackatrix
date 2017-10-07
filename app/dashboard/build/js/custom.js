@@ -2170,9 +2170,9 @@ if (typeof NProgress != 'undefined') {
 			  var lineChart = new Chart(ctx, {
 				type: 'line',
 				data: {
-				  labels: ["January", "February", "March", "April", "May", "June", "July"],
+				  labels: ["08:00hs", "09:00hs", "10:00hs", "11:00hs", "12:00hs", "13:00hs", "14:00hs"],
 				  datasets: [{
-					label: "My First dataset",
+					label: "Precio de entrega",
 					backgroundColor: "rgba(38, 185, 154, 0.31)",
 					borderColor: "rgba(38, 185, 154, 0.7)",
 					pointBorderColor: "rgba(38, 185, 154, 0.7)",
@@ -2180,17 +2180,7 @@ if (typeof NProgress != 'undefined') {
 					pointHoverBackgroundColor: "#fff",
 					pointHoverBorderColor: "rgba(220,220,220,1)",
 					pointBorderWidth: 1,
-					data: [31, 74, 6, 39, 20, 85, 7]
-				  }, {
-					label: "My Second dataset",
-					backgroundColor: "rgba(3, 88, 106, 0.3)",
-					borderColor: "rgba(3, 88, 106, 0.70)",
-					pointBorderColor: "rgba(3, 88, 106, 0.70)",
-					pointBackgroundColor: "rgba(3, 88, 106, 0.70)",
-					pointHoverBackgroundColor: "#fff",
-					pointHoverBorderColor: "rgba(151,187,205,1)",
-					pointBorderWidth: 1,
-					data: [82, 23, 66, 9, 99, 4, 2]
+					data: [100, 200, 300, 500, 250, 120, 380]
 				  }]
 				},
 			  });
@@ -2205,7 +2195,7 @@ if (typeof NProgress != 'undefined') {
 			  var mybarChart = new Chart(ctx, {
 				type: 'bar',
 				data: {
-				  labels: ["Acelga", "Berengena", "Naranja", "Zanahoria", "Frutilla", "Pera", "Tomate"],
+				  labels: ["Acelga", "Berenjena", "Naranja", "Zanahoria", "Frutilla", "Pera", "Tomate"],
 				  datasets: [{
 					label: 'PRECIO FINAL',
 					backgroundColor: "#5449d2",
@@ -2728,11 +2718,10 @@ if (typeof NProgress != 'undefined') {
 				  hideHover: 'auto',
 				  lineColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
 				  data: [
-					{year: '2012', value: 20},
-					{year: '2013', value: 10},
-					{year: '2014', value: 5},
-					{year: '2015', value: 5},
-					{year: '2016', value: 20}
+					{year: '14:00 hs', value: "150"},
+					{year: '15:00 hs', value: "$350"},
+					{year: '16:00 hs', value: "$400"},
+					{year: '17:00 hs', value: "$250"},
 				  ],
 				  resize: true
 				});
@@ -4140,7 +4129,7 @@ if (typeof NProgress != 'undefined') {
 				legend: {
 				  x: 'center',
 				  y: 'bottom',
-				  data: ['Direct Access', 'E-mail Marketing', 'Union Ad', 'Video Ads', 'Search Engine']
+				  data: ["Limpieza", "Verduleria", "Carniceria", "Snacks", "Perfumeria"]
 				},
 				toolbox: {
 				  show: true,
@@ -4168,7 +4157,7 @@ if (typeof NProgress != 'undefined') {
 				  }
 				},
 				series: [{
-				  name: 'Access to the resource',
+				  name: 'CANTIDAD',
 				  type: 'pie',
 				  radius: ['35%', '55%'],
 				  itemStyle: {
@@ -4193,19 +4182,19 @@ if (typeof NProgress != 'undefined') {
 				  },
 				  data: [{
 					value: 335,
-					name: 'Direct Access'
+					name: 'Limpieza'
 				  }, {
 					value: 310,
-					name: 'E-mail Marketing'
+					name: 'Verduleria'
 				  }, {
 					value: 234,
-					name: 'Union Ad'
+					name: 'Carniceria'
 				  }, {
 					value: 135,
-					name: 'Video Ads'
+					name: 'Snacks'
 				  }, {
 					value: 1548,
-					name: 'Search Engine'
+					name: "Perfumeria"
 				  }]
 				}]
 			  });

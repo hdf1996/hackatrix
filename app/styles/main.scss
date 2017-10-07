@@ -113,14 +113,59 @@ body {
     &.uno {
       right: 456px;
       top: 136px;
+      animation: slideUno 2s ease;
+      @keyframes slideUno {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        20% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &.dos {
       right: 367px;
       top: 190px;
+      animation: slideDos 4s ease;
+      @keyframes slideDos {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        50% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &.tres {
       right: 272px;
       top: 254px;
+      animation: slideTres 6s ease;
+      @keyframes slideTres {
+        0% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        66% {
+          transform: translateX(440px) translateY(247px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0) translateY(0);
+          opacity: 1;
+        }
+      }
     }
     &:hover {
       transform: scale(1.2);
@@ -408,4 +453,59 @@ section#main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#top {
+  min-height: 100vh;
+}
+
+section#pasos {
+  background-image: linear-gradient(0deg, #5449d2 0%, #120a70 100%);
+  padding: 30px;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .fila {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0px;
+    &:nth-child(odd) .item {
+      flex-direction: row-reverse;
+      text-align: left;
+      img {
+        margin: 0;
+        margin-left: 3em;
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 710px;
+    width: 60%;
+    text-align: right;
+  }
+  .info {
+    padding-top: 40px;
+    color: $white;
+  }
+  h4 {
+    font-family: $opensans;
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+  img {
+    margin: 0;
+    margin-right: 3em;
+  }
 }
