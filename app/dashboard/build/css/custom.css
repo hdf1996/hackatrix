@@ -178,7 +178,7 @@
 
 .nav_menu {
   float: left;
-  background: #EDEDED;
+  background: #5449d2;
   border-bottom: 1px solid #D9DEE4;
   margin-bottom: 10px;
   width: 100%;
@@ -209,7 +209,7 @@ body .container.body .right_col {
 .nav_title {
   width: 230px;
   float: left;
-  background: #EDEDED;
+  background: #2A3F54;
   border-radius: 0;
   height: 57px; }
 
@@ -586,7 +586,7 @@ a:hover, a:focus {
   height: inherit;
   margin: 0;
   padding-left: 0px;
-  background: #EDEDED; }
+  background: #5449d2; }
 
 .site_title:hover, .site_title:focus {
   text-decoration: none; }
@@ -4061,10 +4061,10 @@ ul.notifications {
   align-items: center; }
 
 .nav_menu a {
-  color: #5449d2; }
+  color: white; }
 
 .nav.navbar-nav > li > a {
-  color: #5449d2 !important; }
+  color: white !important; }
 
 .left_col {
   background: #242424; }
