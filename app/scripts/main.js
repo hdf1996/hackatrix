@@ -1,30 +1,37 @@
 (function() {
-
-  function addUserPic (opt) {
-  	if (!opt.id) {
-  		return opt.text;
-  	}
-  	var optimage = $(opt.element).data('image');
-  	if(!optimage){
-  		return opt.text;
-  	} else {
-  		var $opt = $(
-  		'<span class="userName"><img src="' + optimage + '" class="userPic" /> ' + $(opt.element).text() + '</span>'
-  		);
-  		return $opt;
-  	}
+  function formatSelection (data) {
+    if (!data.id) { return data.text; }
+    var $result= $(
+      '<span>' + data.text + '</span>'
+    );
+    return $result;
   };
-  var data = [{ id: 0, text: 'enhancement' }, { id: 1, text: 'bug' }, { id: 2, text: 'duplicate' }, { id: 3, text: 'invalid' }, { id: 4, text: 'wontfix' }];
+  function formatResult (data) {
+    if (!data.id) { return data.text; }
+    var $result= $(
+      '<div class="selectli"><img src="' + data.image + '"/><div> ' + data.text + '<br/>$30.9</div></div>'
+    );
+    return $result;
+  };
+  var data = [{
+    id: 0,
+    image: 'https://ichef.bbci.co.uk/news/ws/660/amz/worldservice/live/assets/images/2014/11/05/141105131956_leche_624x351_thinkstock.jpg',
+    text: 'Leche',
+    category: 'Comestible'
+  },{
+    id: 1,
+    image: 'https://ichef.bbci.co.uk/news/ws/660/amz/worldservice/live/assets/images/2014/11/05/141105131956_leche_624x351_thinkstock.jpg',
+    text: 'enhancement'
+  }
+];
 
   $('.js-input').select2({
-    url: "https://api.github.com/search/repositories",
     data: data,
     allowClear: true,
+    templateResult: formatResult,
+    templateSelection: formatSelection,
     placeholder: "Selecciona tu producto",
     processResults: function (data, page) {
-      // parse the results into the format expected by Select2.
-      // since we are using custom formatting functions we do not need to
-      // alter the remote JSON data
       return data;
     },
   })
