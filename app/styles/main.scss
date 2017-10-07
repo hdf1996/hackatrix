@@ -262,12 +262,12 @@ body {
   }
 }
 .input-label {
-    color: #5449d2;
-    font-weight: bold;
-    margin-bottom: 11px;
-    letter-spacing: 1px;
-    font-size: 9pt;
-  }
+  color: #5449d2;
+  font-weight: bold;
+  margin-bottom: 11px;
+  letter-spacing: 1px;
+  font-size: 9pt;
+}
 .firstline {
   .precio-u {
     p {
@@ -312,7 +312,7 @@ body {
   .select2-selection--single {
     height: 36px;
   }
- 
+
   .col-xs-1,
   .col-xs-4 {
     display: flex;
@@ -321,48 +321,46 @@ body {
     flex-wrap: wrap;
     margin-right: 30px;
   }
-  
 }
-.encarga{
-  color: #2A3F54;
+.encarga {
+  color: #2a3f54;
   margin-left: 1em;
   margin-left: 0.5em;
 }
-.eor{
+.eor {
   height: 2em;
 }
 .col-xs-1,
-  .col-xs-4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-right: 30px;
-  }
-  .titles{
-    margin-bottom: 2em;
-     p {
+.col-xs-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.titles {
+  margin-bottom: 2em;
+  p {
     margin: auto;
     margin-bottom: 2em;
     text-align: left;
-     }
   }
-  .tituloprincipal{
-    margin-bottom: 2em;
-    margin-top: 2em;
-    display: inline-flex;
-    width: 81%;
-    justify-content: space-between;
-    align-items: center;
-    span{
-      font-size: 3em;
-    }
-
+}
+.tituloprincipal {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  display: inline-flex;
+  width: 81%;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    font-size: 3em;
   }
-  .felicitacion{
-    color: black;
-    width: 48%;
-  }
+}
+.felicitacion {
+  color: black;
+  width: 48%;
+}
 .totales {
   width: 85%;
   display: inline-flex;
@@ -540,6 +538,11 @@ section#pasos {
     &:nth-child(odd) .item {
       flex-direction: row-reverse;
       text-align: left;
+      &:hover {
+        img {
+          transform: scale(1.07) rotate(5deg);
+        }
+      }
       img {
         margin: 0;
         margin-left: 3em;
@@ -554,6 +557,11 @@ section#pasos {
     min-width: 710px;
     width: 60%;
     text-align: right;
+    &:hover {
+      img {
+        transform: scale(1.07) rotate(-5deg);
+      }
+    }
   }
   .info {
     padding-top: 40px;
@@ -570,5 +578,6 @@ section#pasos {
   img {
     margin: 0;
     margin-right: 3em;
+    transition: 0.3s ease all;
   }
 }
