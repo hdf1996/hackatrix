@@ -11,6 +11,8 @@
 
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link src="/bower_components/select2/dist/css/select2.min.css"></link>
     <!-- Font Awesome -->
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
@@ -18,6 +20,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.css" rel="stylesheet">
   </head>
@@ -270,7 +273,88 @@
         <!-- page content -->
         <div class="right_col" role="main">
           <div class="">
-      hola
+            <div class="container-fluid">
+
+              <div class="subtitle">
+                <p>Seleccionar Producto:</p>
+                <p>Seleccionar Cantidad:</p>
+                <p>Seleccionar Prioridad:</p>
+                <p>Precio unitario:</p>
+                <p>Precio total:</p>
+
+              </div>
+              <div class="firstline">
+
+                <div class="col-xs-3">
+                  <p class="input-label">TITLE</p>
+                  <div class="productSelector">
+                    <select class="form-control js-input" type="text" name="producto">
+                    </select>
+                  </div>
+                </div>  
+
+                <div class="col-xs-1">
+                  <p class="input-label">TITLE</p>
+                  <div class="cant-select">
+                    <input type="number">
+                  </div>
+                </div>  
+
+                <div class="col-xs-1">
+                  <p class="input-label">TITLE</p>
+                  <div class="cant-select prioridad">
+                    <select class="form-control">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-xs-1">
+                  <p class="input-label">TITLE</p>
+                  <div class="precio-u">
+                    <p>$40</p>
+                  </div>
+                </div>  
+
+                <div class="col-xs-1">
+                  <p class="input-label">TITLE</p>
+                  <div class="precio-t">
+                    <p>$200</p>
+                    <span>$255</span>
+                  </div>
+                </div>  
+
+                <div class="col-xs-1">
+                  <p class="input-label">TITLE</p>
+                  <div>
+                    <p><strong>$55</strong></p>
+                  </div>
+                </div>  
+
+              </div>
+              <div class="totales">
+                <p>Totales</p>
+                <div class="p-tot">
+
+                  <span>$2500</span>
+                <span>$500</span>
+                </div>
+              </div>
+              <div class="comprar col-xs-12">
+                <span class="glyphicon glyphicon-ok"></span>
+                <div class="felicitacion">
+                  <h2>Felicidades!</h2>
+                    <p>Ahorraste un 28% en esta compra</p>
+                </div>
+                <div class="boton">
+                  <button>Encargar</button>
+                </div>
+              </div>
+            </div>
           
           </div>
         </div>
@@ -289,6 +373,10 @@
 
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
+
+    <script src="/bower_components/select2/dist/js/select2.min.js"></script>
+    <script src="/scripts/main.js"> </script>
+    
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
