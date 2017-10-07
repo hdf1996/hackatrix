@@ -22,6 +22,17 @@
     // row.find('.precio-u').text(`$${info.price}`)
     row.find('.precio-t p').html(`$${info.priceM * ammount}`)
     row.find('.precio-t span').html(`$${info.priceG * ammount}`)
+    row.find('.precio-desc').html(`$${(info.priceG - info.priceM)*ammount}`)
+    var total = 0;
+    var totaldesc = 0;
+    document.querySelectorAll('.precio-t p').forEach((p) => {
+      total += parseFloat(p.innerHTML.slice(1, p.innerHTML.length))
+    })
+    document.querySelectorAll('.precio-desc').forEach((p) => {
+      totaldesc += parseFloat(p.innerHTML.slice(1, p.innerHTML.length))
+    })
+    $('.total-total').html(`$${Number((total).toFixed(2))}`)
+    $('.total-descuento').html(`$${Number((totaldesc).toFixed(2))}`)
   }
   var data = [{
     id: 0,
@@ -88,7 +99,6 @@
 ];
 
   const createEvents = function (element) {
-    console.log(element)
     element.find('.js-input').select2({
       data: data,
       allowClear: true,
@@ -102,6 +112,7 @@
     })
     element.find('.js-input').change(recalculate)
     element.find('input').change(recalculate)
+    recalculate.bind(element)();
   }
   createEvents($('.firstline'))
   $('.js-new-row').click(function () {
