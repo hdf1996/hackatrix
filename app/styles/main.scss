@@ -71,6 +71,9 @@ header {
       &:not(.accent):hover {
         border-bottom: 1px solid $white;
       }
+      &:not(.accent) {
+        font-weight: 300;
+      }
       &.accent {
         padding: 12px 30px;
         background-color: #ff7648;
@@ -133,6 +136,10 @@ section#main {
   align-items: center;
   .block {
     width: 50%;
+    h3,
+    h4 {
+      cursor: default;
+    }
     h3 {
       margin-bottom: 1.2em;
       font-size: 3em;
