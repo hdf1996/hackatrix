@@ -4,14 +4,114 @@ $icon-font-path: "../fonts/";
 // endbower
 @import "constants";
 
+html,
+body {
+  background-color: $white;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: $montserrat;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.6em;
 }
 
 p {
   font-family: $opensans;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+header {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    margin-left: 2em;
+    margin-top: 10px;
+  }
+  .right,
+  .right ul {
+    display: flex;
+  }
+  ul {
+    list-style-type: none;
+    color: #d4d0ff;
+    font-family: $opensans;
+    margin-bottom: 0;
+    align-items: center;
+    li {
+      margin-right: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s ease all;
+      &:not(.accent):hover {
+        border-bottom: 1px solid $white;
+      }
+      &.accent {
+        padding: 12px 30px;
+        background-color: #ff7648;
+        border-radius: 4px;
+        color: white;
+        box-shadow: -1px 3px 20px 0px #0e094a;
+        &:hover {
+          box-shadow: -1px 5px 20px 5px #0e094a;
+        }
+      }
+    }
+  }
+}
+
+section {
+  background: transparent;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../images/landing-graphic.png) top right no-repeat;
+  background-size: 51%;
+}
+
+section#main {
+  margin-top: 4em;
+  margin-left: 7em;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  .block {
+    width: 50%;
+    h3 {
+      margin-bottom: 1.2em;
+      font-size: 3em;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 1.8em;
+    }
+    input {
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      padding: 18px;
+      border-radius: 70px;
+      width: 83%;
+      box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.25);
+      font-family: open sans;
+      font-size: 1.2em;
+      padding-left: 20px;
+      margin: 33px 0;
+      padding-right: 60px;
+      background: url(../images/searchbtn.png) 99% center no-repeat;
+      background-size: 12%;
+    }
+  }
 }
