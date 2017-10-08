@@ -8,9 +8,9 @@ Plataforma de compras colaborativas, orientada a obtener un precio justo, evitan
 # Miembros del Team :watermelon:
 - [Micael Robles]()
 - [Hugo Farji](https://github.com/hdf1986) 
-- [Guadalupe Lazzo]()
+- [Guadalupe Lazzo](https://guadalazzo.github.io/)
 - [Luciano Ramello]()
-- [Kevin Arleo]()
+- [Kevin Arleo](https://dribbble.com/keevarleo)
 - [Tomás Diaco]()
 
 ![Team sandy](https://github.com/hdf1986/hackatrix/raw/master/sandy.png)
