@@ -103,6 +103,7 @@ section {
 }
 
 body {
+  overflow-x: hidden;
   min-height: 100vh;
   //background: url(../images/landing-graphic.png) top right no-repeat;
   background-size: 51%;
@@ -205,6 +206,10 @@ body {
   min-height: 60vh;
   display: flex;
   align-items: center;
+  .relative {
+    position: relative;
+  }
+
   .block {
     width: 50%;
     animation: 1.3s blockUp ease;
@@ -279,6 +284,15 @@ body {
   p {
     width: 200px;
   }
+}
+.new-products {
+  display: block;
+  position: absolute;
+  background: transparent;
+  height: 50px;
+  width: 50px;
+  top: 40px;
+  right: 110px;
 }
 .input-label {
   color: #5449d2;
