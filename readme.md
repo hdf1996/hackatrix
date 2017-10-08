@@ -3,4 +3,13 @@
 
 Plataforma de compras colaborativas, orientada a obtener un precio justo, evitando intermediarios entre el consumidor y el producto, y ayudando a los pequeños productores a tener mas oportunidades en el mercado
 
+# Miembros del Team :watermelon:
+- [Micael Robles]()
+- [Hugo Farji](https://github.com/hdf1986) 
+- [Guadalupe Lazzo]()
+- [Luciano Ramello]()
+- [Kevin Arleo]()
+- [Tomás Diaco]()
+
 ![Team sandy](https://github.com/hdf1986/hackatrix/raw/master/sandy.png)
+
