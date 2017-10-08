@@ -117,7 +117,7 @@
   createEvents($('.firstline'))
   $('.js-new-row').click(function () {
     $.ajax({
-      url: '/row.html',
+      url: '/hackatrix/row.html',
       success: function (data) {
         const l = $('.firstline').last().after(data)
         createEvents($('.firstline').last())
